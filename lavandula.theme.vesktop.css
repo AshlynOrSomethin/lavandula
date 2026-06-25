@@ -1,0 +1,109 @@
+/**
+ * @name Lavandula Midnight Purple
+ * @author Gemini Custom Colorway
+ * @version 1.0.0
+ * @description A rich, deep midnight purple and lavender dark theme based on the Lavandula colorway.
+ */
+
+:root {
+    /* Main Theme Mappings */
+    --background-primary: #050014 !important;      /* Core Midnight Space Background */
+    --background-secondary: #0e0720 !important;    /* Channels and Panels Sidebar */
+    --background-secondary-alt: #160d2e !important;/* User Profile Card Footers */
+    --background-tertiary: #03000d !important;     /* Server List Hub Container */
+    --background-floating: #1c113a !important;     /* Right-Click Menus and Popouts */
+    
+    /* Text Color Profiles */
+    --text-normal: #8C91FA !important;            /* High Contrast Lavender Text */
+    --text-muted: #736E7D !important;             /* Muted Gray-Purple Descriptions */
+    --text-link: #8E87E0 !important;              /* Interactive Bright Violet Links */
+    --header-primary: #8C91FA !important;         /* Headings and Server Titles */
+    --header-secondary: #736E7D !important;       /* Muted Channel Category Titles */
+    
+    /* Interaction & Accent Targets */
+    --brand-experiment: #A776E0 !important;       /* Core Accent Violet (Buttons, Sliders) */
+    --brand-experiment-hover: #8E87E0 !important; /* Interactive Accent Hover */
+    --background-modifier-selected: #230046 !important; /* Active Chat Channel Highlights */
+    --background-modifier-hover: #372D46 !important;    /* Active Hover Highlights */
+    --background-modifier-active: #4F4A7F !important;   /* Clicked Action Containers */
+    
+    /* Border and Dividers */
+    --border-lines: #4F4A7F !important;           /* Structural Grid Dividing Lines */
+    --activity-card-background: #0e0720 !important;
+}
+
+/* --- Theme Integration Cleanups --- */
+
+/* Fix background canvases across the UI application */
+.theme-dark,
+.container_3w7wHL,
+.scroller_1ox6I2,
+.applicationStore_ce05d1 {
+    background-color: var(--background-primary) !important;
+}
+
+/* Style direct chat message scroll fields */
+.chatContent_a7d72e,
+.container_cbd271 {
+    background-color: var(--background-primary) !important;
+}
+
+/* Restyle mention text flags to stay in-bounds with the palette */
+.mention_b5211b,
+.wrapper_d880dc {
+    background-color: rgba(167, 118, 224, 0.15) !important;
+    color: #A776E0 !important;
+}
+.mention_b5211b:hover,
+.wrapper_d880dc:hover {
+    background-color: rgba(167, 118, 224, 0.3) !important;
+}
+
+/* Adjust modern Discord text area target fields */
+.scrollableContainer_d5de23 {
+    background-color: var(--background-secondary) !important;
+    border: 1px solid var(--border-lines) !important;
+}
+
+/* Style active voice connection channels & settings elements */
+.container_b2ce9e,
+.sidebar_a4d4d9 {
+    background-color: var(--background-secondary) !important;
+}
+
+/* Right-side Member Roster layout block */
+.members_cbd771, 
+.membersWrap_cbd771 {
+    background-color: var(--background-secondary) !important;
+}
+
+/* Embed card fields inside active channels */
+.embedFull_b0068a {
+    background-color: var(--background-secondary) !important;
+    border-left: 4px solid var(--brand-experiment) !important;
+    border-radius: 4px !important;
+}
+
+/* Popouts, Context Dropdowns, and Settings Cards */
+.menu_d90b3d,
+.userPopoutOuter_c69a7b {
+    background-color: var(--background-floating) !important;
+    border: 1px solid var(--border-lines) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6) !important;
+}
+
+/* Style tooltips floating over icons */
+.tooltipPrimary_b6ba2f {
+    background-color: var(--background-floating) !important;
+    color: var(--text-normal) !important;
+    border: 1px solid var(--border-lines) !important;
+}
+
+/* Custom Webkit scrollbar accents to match theme */
+::-webkit-scrollbar-thumb {
+    background-color: var(--background-modifier-active) !important;
+    border-radius: 4px !important;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
