@@ -1,0 +1,43 @@
+{
+  "name": "lavandula-vscode-theme",
+  "displayName": "Lavandula Theme",
+  "description": "Lavandula dark theme for VS Code, based on the Ptyxis palette.",
+  "version": "1.0.0",
+  "publisher": "ashlynorsomethin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AshlynOrSomethin/lavandula.git"
+  },
+  "homepage": "https://github.com/AshlynOrSomethin/lavandula",
+  "bugs": {
+    "url": "https://github.com/AshlynOrSomethin/lavandula/issues"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "lavandula",
+    "purple"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Lavandula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/lavandula-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.1"
+  }
+}
