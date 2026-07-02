@@ -1,2 +1,3 @@
 node_modules/
 *.vsix
+!lavandula-vscode-theme-1.0.0.vsix
